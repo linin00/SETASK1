@@ -25,6 +25,7 @@
 注意：构建CSS Object Model（CSSOM)会阻塞JavaScript的执行。JavaScript的执行也会阻塞DOM的构建。
 JavaScript下载后可以通过DOM API修改DOM，通过CSSOM API修改样式作用域Render Tree。
 每次修改会造成Render Tree的重新布局和重绘。只要修改DOM或修改了元素的形状或大小，就会触发Reflow，单纯修改元素的颜色只需Repaint一下（调用操作系统Native GUI的API绘制）。![](https://pic2.zhimg.com/e8bc40d7006f13fa0a191d774b7db36a_r.jpg?source=1940ef5c)
-(自知乎引用：
+>
+>(自知乎引用：
 作者：陈金
 原文：[https://www.zhihu.com/question/30218438/answer/84704484](https://www.zhihu.com/question/30218438/answer/84704484))
